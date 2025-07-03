@@ -1,0 +1,114 @@
+.card {
+	/*border: 1px solid black;*/
+	/*min-width: 300px;*/
+	/*margin: 10px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 10px 0;
+	border-radius: 4px;
+	background-color: #FBDFDF;
+	/*width: 40%;*/
+}
+
+.task-completed {
+	background-color: #E6FFCC;
+}
+
+.card .title {
+	margin-bottom: 5px;
+	color: #333;
+	margin-left: 10px;
+}
+
+.card .description {
+	margin: 10px 0;
+	color: #444;
+	overflow-y: auto;
+	overflow-wrap: break-word;
+	max-height: 100px;
+}
+
+.card .progressImage {
+	width: 30px;
+	height: 30px;
+}
+.card .img-title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+
+.card .status-time {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.card .createdTime {
+	font-style: italic;
+}
+
+.card .edit {
+    background-color: #3333FF;
+    color: white;
+    font-size: 12px;
+    border: none;
+	padding: 5px 10px;
+}
+
+.card .delete {
+    background-color: #FF3333;
+    color: white;
+    font-size: 14px;
+    border: none;
+	padding: 5px 10px;
+}
+
+.card .buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.card .delete:hover {
+	background-color: #FF0000;
+}
+
+.card .edit:hover {
+	background-color: #0000ED;
+}
+
+.false {
+	background-color: #F2F2F2;
+	padding: 0 5px;
+	color: #FF8000;
+}
+
+.true {
+	font-weight: bold;
+	color: #3333FF;
+	padding: 0 5px;
+}
+
+.done, .undo {
+	background-color: #3333FF;
+	border: none;
+	font-size: 14px;
+	padding: 5px 10px;
+	color: white;
+}
+
+.done:hover, .undo:hover {
+	background-color: #0000ED;
+}
+
+.edit,
+.delete,
+.done,
+.undo {
+	margin-bottom: 10px;
+}
