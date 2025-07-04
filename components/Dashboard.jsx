@@ -67,9 +67,9 @@ export default function Dashboard() {
 			} else if (err?.response?.status === 500) {
 				setShowServerError(true);
 			} else {
-				setShowForm(false);
+				setAddTaskFailureMessage('Check your internet connection');	
 			}
-			console.log("$$$$$$$$$$$$$$", err);
+			console.log(err);
 		}
 	};
 
