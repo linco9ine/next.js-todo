@@ -67,7 +67,6 @@ export default function Dashboard() {
 			} else if (err?.response?.status === 500) {
 				setShowServerError(true);
 			} else {
-				cosole
 				setShowForm(false);
 			}
 			console.log("$$$$$$$$$$$$$$", err);
