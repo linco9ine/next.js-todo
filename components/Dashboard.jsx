@@ -67,6 +67,7 @@ export default function Dashboard() {
 			} else if (err?.response?.status === 500) {
 				setShowServerError(true);
 			} else {
+				cosole
 				setShowForm(false);
 			}
 			console.log(err);
@@ -83,7 +84,7 @@ export default function Dashboard() {
 			await axios.put(`/api/tasks/${taskIdToEdit}`, edited, {withCredentials: true});
 			setTasks(prev => prev.map(task => task.id === taskIdToEdit ? {...task, title: newTitle, description: newDescription} : task));
 		} catch(err) {
-			console.log(err);
+			console.log("%%%%%", err);
 		}
 	};
 
