@@ -114,7 +114,7 @@ class Controller {
       res.setHeader("Set-Cookie", serialize("token", token, {
         httpOnly: true,
         secure: true,
-        sameSite: "None",
+        sameSite: "Strict",
         maxAge: 86400000
       }));
       res.json({"message": "Login successful"});
