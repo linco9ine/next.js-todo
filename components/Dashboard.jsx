@@ -165,7 +165,7 @@ export default function Dashboard() {
 				<p>No task added yet!</p>
 				<div className={styles["bounce-hint"]}>⬆️ Click "Add Task" to get started!</div>
 			</div>
-		)};
+		)}
 
 		{showEditForm && (
 			<EditTaskForm
